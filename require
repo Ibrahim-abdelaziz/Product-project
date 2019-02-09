@@ -1,0 +1,11 @@
+argon2-cffi==19.1.0
+bcrypt==3.1.6
+cffi==1.11.5
+Django==2.0.8
+django-bootstrap4==0.0.7
+django-ckeditor==5.6.1
+django-js-asset==1.1.0
+Pillow==5.2.0
+pycparser==2.19
+pytz==2018.5
+six==1.12.0

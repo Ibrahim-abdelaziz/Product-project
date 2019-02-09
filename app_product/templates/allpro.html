@@ -1,0 +1,18 @@
+{% extends "main.html" %}
+{% load static %}
+
+
+  {% block title %}
+    Products
+{% endblock %}
+
+{% block body %}
+{% load bootstrap4 %}
+<h1>All Products</h1>
+{% for singlepro in data %}
+
+<a href="{% url 'one_product' singlepro.name %}"><h4>Product : {{singlepro.name|upper}}<h4/></a>
+    {% endfor%}
+<button type="submit"> <a href="{% url 'add_product' %}">Add New Product</a></button>
+
+    {% endblock %}

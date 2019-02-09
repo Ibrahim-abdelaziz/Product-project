@@ -1,0 +1,30 @@
+{% extends "main.html" %}
+{% load static %}
+
+  {% block title %}
+    One_Product
+{% endblock %}
+
+
+{% block body %}
+{% load bootstrap4 %}
+
+<table align="center" width="500px" border="3px" height="100px">
+     <tr>
+        <td width="20px"> Product Name</td>
+        <td width="20px"> Product Price</td>
+        <td width="20px">Product Type</td>
+         <td width="20px">Product img</td>
+    </tr>
+    <tr>
+        <td width="20px"> {{datas.name}}</td>
+        <td width="20px">{{datas.price}}</td>
+        <td width="20px">{{datas.type}}</td>
+         <td width="20px">
+        {%if datas.img%}
+        <img src="{{datas.img.url}}" width="50px" height="40px" alt="">
+        {%endif%}
+        </td>
+    </tr>
+</table>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "main.html" %}
+{% load static %}
+
+  {% block title %}
+    Add_Products
+{% endblock %}
+
+
+{% block body %}
+
+{% load bootstrap4 %}
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+     {% bootstrap_form addform %}
+<br/>    {% buttons %}
+    <button type="submit" class="btn btn-primary">Add New Product</button>
+            {% endbuttons %}
+    </form>
+{% endblock %}
